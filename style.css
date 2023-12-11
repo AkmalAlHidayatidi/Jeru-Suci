@@ -1,0 +1,323 @@
+:root{
+    --war1: #a6ccf1;
+    --war2: #b298bd;
+    --war3: #F6D8E2;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(foto/IMG_1712.JPG);
+    background-size: cover;
+    background-blend-mode: difference;
+    background-position: 55%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh; 
+}
+
+.hero h1, .hero h4, .hero p, .hero h3, .hero h5{
+    text-shadow: var(--shadow);
+    color: var(--war3);
+}
+
+.hero h1{
+    font-family: 'sacramento', cursive;
+    font-size: 5rem;
+}
+
+.hero h4{
+    font-size: 1.5rem;
+}
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+.hero h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    padding: 2px;
+}
+
+.hero a{
+    color: var(--war2);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--war2);
+    color: white;
+}
+
+@media(max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+
+    .simply-countdown>.simply-section{
+        padding: 70px;
+    }
+
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center; 
+    }
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 65%;
+    }
+
+    .simply-countdown>.simply-section{
+        padding: 60px;
+        margin: 5px;
+    }
+}
+
+@media(max-width: 576px){
+    html{
+        font-size: 60%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 45px;
+        margin: 3px;
+    }
+
+    .home .couple {
+        padding-top: 5rem;
+    }
+
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 55%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 35px;
+        margin: 2px;
+    }
+
+    .home .couple {
+        padding-top: 5rem;
+    }
+    
+}
+
+.mynavbar{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 2px 2px 2px rgba(255,255,255,0.4);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding: 10px;
+}
+
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: 'sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--war3);
+}
+
+.mynavbar .navbar-toggler{
+    border: 1px solid var(--war3);
+    border-radius: 25px;
+}
+
+.mynavbar .nav-link{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--war3);
+}
+
+.mynavbar .nav-link:hover{
+    color: var(--war1);
+}
+
+.home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(foto/IMG_1764.JPG);
+    background-size: cover;
+    background-blend-mode: difference;
+    background-position: 30%;
+    margin-top: -6.5rem;
+    padding-top: 10rem;
+    filter: brightness(60%);
+}
+
+.home h2, .info h2, .gallery h2, .gift h2{
+    color: var(--war1);
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: var(--shadow);
+}
+
+.home .couple {
+    padding-top: 10rem;
+}
+
+.home p, .home h3{
+    text-shadow: var(--shadow);
+    color: var(--war3);
+}
+
+.home .couple .cowok{
+    padding-right: 70%;
+    color: var(--war3);
+    font-weight: bold;
+    text-shadow: var(--shadow);
+}
+
+.home .couple .cewek{
+    padding-left: 60%;
+    color: var(--war3);
+    font-weight: bold;
+    text-shadow: var(--shadow);
+}
+
+.home .couple .cowok h3, .home .couple .cewek h3{
+    font-family: 'sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.info{
+    background-color: var(--war2);
+    margin-top: -3.1rem;
+}
+
+.info h2{
+    margin-top: 10rem;
+}
+
+.gallery{
+    background-color: var(--war3);
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.gallery .container img{
+    width: 200px;
+    margin: 8px;
+    border-radius: 30px;
+    border: 6px solid var(--war1);
+}
+
+.info p .rsvp p, .gift p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.rsvp{
+    background-color: var(--war1);
+}
+
+.rsvp h2{
+    color: var(--war3);
+    font-family: 'sacramento';
+    font-weight: bold;
+    text-shadow: var(--shadow);
+    font-size: 4rem;
+}
+
+.rsvp button{
+    margin-top: 20px;
+    background-color: var(--war2);
+    border: none;
+    color: var(--war3);
+}
+
+.rsvp button:hover{
+    margin-top: 20px;
+    background-color: var(--war3);
+    border: none;
+    color: var(--war2);
+}
+
+.rsvp{
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.gift{
+    background-color: var(--war2);
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.gift .list-group .list-group-item{
+    margin: 5px;
+}
+
+footer{
+    padding: 3rem;
+    background-color: var(--war3);
+    color: var(--war2);
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.audio-icon-wrapper{
+    width: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--shadow);
+    opacity: 0.5;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.gallery span,
+.rsvp span
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
